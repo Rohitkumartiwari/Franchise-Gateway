@@ -1,0 +1,67 @@
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.header_backgroundImage {
+  background-image: url("../public/Images/franchiseHeader.png");
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.detailHeaderSection {
+  background-image: url("../public/Images/detailHeader.png");
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid white;
+}
+.card_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.card_wrapper:hover .card_info {
+  bottom: 0;
+}
+.card_info {
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: -100%;
+  position: absolute;
+  background-color: rgba(20, 19, 19, 0.677);
+  transition: 1s;
+}
+.heading {
+  color: black;
+}
+.pagination_container > ul {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(217, 214, 214);
+  border-radius: 5px;
+}
+.pagination_container > ul > li {
+  margin-inline: 10px;
+  padding: 5px 10px;
+}
+/* .active {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+} */
+
+.pagination_container > ul > li.selected {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
