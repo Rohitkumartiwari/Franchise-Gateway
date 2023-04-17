@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Context, { useGloabalContext } from "../context/context";
 import Loader from "../Components/Loader";
-const browseIndustries = () => {
+const BrowseIndustries = () => {
   const router = useRouter();
   const { location, range, sectors } = router?.query;
   const [amountRange, setAmountRange] = useState("");
