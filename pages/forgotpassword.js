@@ -9,7 +9,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import Context, { useAuthGloabalContext } from "../context/authContext";
-const forgotPassword = () => {
+const ForgotPassword = () => {
   const {
     getMobileVerify,
     mobileVerify,
@@ -175,4 +175,4 @@ const forgotPassword = () => {
   );
 };
 
-export default forgotPassword;
+export default ForgotPassword;

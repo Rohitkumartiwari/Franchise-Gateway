@@ -5,7 +5,7 @@ import Context, { useGloabalContext } from "../context/context";
 import ReactPaginate from "react-paginate";
 import Link from "next/link";
 import Loader from "../Components/Loader";
-const trendingFranchise = () => {
+const TrendingFranchise = () => {
   const { getAllFranchiseList, allFranchiseList, loading } =
     useGloabalContext();
   const [filter, setFilter] = useState("");
@@ -14,7 +14,7 @@ const trendingFranchise = () => {
 
   useEffect(() => {
     getAllFranchiseList(id, filter, page);
-  }, [filter, page]);
+  }, [id, filter, page]);
 
   return (
     <div>
@@ -150,4 +150,4 @@ const trendingFranchise = () => {
   );
 };
 
-export default trendingFranchise;
+export default TrendingFranchise;

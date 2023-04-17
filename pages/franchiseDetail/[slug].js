@@ -14,7 +14,7 @@ import { Dialog, Transition, Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import { ImCancelCircle } from "react-icons/im";
 import Loader from "../../Components/Loader";
-const franchiseDetail = () => {
+const FranchiseDetail = () => {
   const router = useRouter();
   const route = router.query.slug;
   const [isOpen, setIsOpen] = useState(false);
@@ -420,4 +420,4 @@ const franchiseDetail = () => {
   );
 };
 
-export default franchiseDetail;
+export default FranchiseDetail;

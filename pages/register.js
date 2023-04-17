@@ -4,7 +4,7 @@ import img from "../public/Images/login/register.png";
 import { useRouter } from "next/router";
 import Context, { useAuthGloabalContext } from "../context/authContext";
 import OtpInput from "react-otp-input";
-const register = () => {
+const Register = () => {
   const router = useRouter();
   const { userMobile, sendOtp, verifyOtp, register, isAuthenticated } =
     useAuthGloabalContext();
@@ -128,4 +128,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

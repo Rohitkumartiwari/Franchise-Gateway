@@ -236,4 +236,4 @@ const BrowseIndustries = () => {
   );
 };
 
-export default browseIndustries;
+export default BrowseIndustries;
