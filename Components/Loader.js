@@ -1,5 +1,5 @@
 import React from "react";
-import loaderImg from "../public/images/loader.gif";
+import loaderImg from "../public/Images/loader.gif";
 import Image from "next/image";
 const Loader = ({ loading, children }) => {
   if (!loading) {
